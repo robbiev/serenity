@@ -6,17 +6,23 @@
 
 #pragma once
 
+#ifdef __cplusplus
 #include <Kernel/API/Syscall.h>
+#endif
+
 #include <sys/types.h>
 
+#ifdef __cplusplus
 extern "C" {
-
+#endif
 uintptr_t syscall0(uintptr_t function);
 uintptr_t syscall1(uintptr_t function, uintptr_t arg0);
 uintptr_t syscall2(uintptr_t function, uintptr_t arg0, uintptr_t arg1);
 uintptr_t syscall3(uintptr_t function, uintptr_t arg0, uintptr_t arg1, uintptr_t arg2);
 uintptr_t syscall4(uintptr_t function, uintptr_t arg0, uintptr_t arg1, uintptr_t arg2, uintptr_t arg3);
+#ifdef __cplusplus
 }
+#endif
 
 #ifdef __cplusplus
 

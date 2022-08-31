@@ -402,7 +402,7 @@ pushd "$DIR/Build/$ARCH"
                                             --with-sysroot="$SYSROOT" \
                                             --disable-nls \
                                             --enable-shared \
-                                            --enable-languages=c,c++ \
+                                            --enable-languages=c,c++,go \
                                             --enable-default-pie \
                                             --enable-lto \
                                             --enable-threads=posix \
